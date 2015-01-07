@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2015-01-07T15:01:11+01:00
+
+====== Cost template ======
+Created mercoledì 07 gennaio 2015
+
+The purpose of this document is to define a simple template for costs independently from the offered product or service.
+
+{{./diagram.png?type=diagram}}
+

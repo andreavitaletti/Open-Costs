@@ -1,0 +1,18 @@
+digraph G {
+
+	subgraph cluster_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+		"raw material" -> "equipment" -> "personnel";
+		label = "production";
+	}
+
+	subgraph cluster_1 {
+		node [style=filled];
+		"personnel" -> a2 -> a3;
+		label = "Distribution";
+		color=blue
+	}
+
+}
