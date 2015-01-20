@@ -1,18 +1,17 @@
-digraph G {
-
-	subgraph cluster_0 {
-		style=filled;
-		color=lightgrey;
-		node [style=filled,color=white];
-		"raw material" -> "equipment" -> "personnel";
-		label = "production";
-	}
-
-	subgraph cluster_1 {
-		node [style=filled];
-		"personnel" -> a2 -> a3;
-		label = "Distribution";
-		color=blue
-	}
-
+digraph {
+    subgraph cluster_0 {
+        label="Produzione";
+        "Costo materia prima" -> "Costo macchine";
+        "Costo macchine" -> "Costo lavoro";
+    } 
+    subgraph cluster_1 {
+        "Costo lavoro" -> "Prezzo FOB";
+    }
+    subgraph cluster_2 {
+        label="Distribuzione";
+        "Prezzo FOB" -> "Costi accessori";
+        "Costi accessori" -> "Margine CTM Altromercato";
+        "Margine CTM Altromercato" -> "Margine medio dettagliante";
+    }
+    "Margine medio dettagliante" -> "Prezzo FINALE";
 }
